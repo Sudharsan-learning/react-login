@@ -35,6 +35,39 @@ function App() {
     sortDescPrices.sort((a, b) => a.id - b.id).reverse();
     setUserData(sortDescPrices);
   };
+  
+  if (localStorage.rememberme && localStorage.token == "QpwL5tke4Pnpja7X4") {
+    return (
+      <>
+      <div className="App">
+          <button onClick={sortAscending}>asc</button>
+          <button onClick={sortDescending} style={{ marginLeft: "10px" }}>
+            desc
+          </button>
+          <div className="flex flex-wrap justify-center">
+            {userData &&
+              userData.map((data) => {
+                return (
+                  <div key={data.id}>
+                    <div className="wrapper">
+                      <div className="img-area">
+                        <div className="inner-area">
+                          <img src={data.avatar} alt="" />
+                        </div>
+                      </div>
+                      <div className="name">
+                        {data.first_name} {data.last_name}
+                      </div>
+                      <div className="about">{data.email}</div>
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
+</div>
+        </>
+    );
+  }
 
   return (
     <div className="App">
