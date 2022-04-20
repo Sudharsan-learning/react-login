@@ -44,7 +44,7 @@ function App() {
           <button onClick={sortDescending} style={{ marginLeft: "10px" }}>
             desc
           </button>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center">
             {userData &&
               userData.map((data) => {
                 return (

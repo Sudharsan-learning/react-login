@@ -3,7 +3,10 @@
   margin-top: 30px;
 }
 
-input[type="text"],input[type="email"], input[type="password"],select {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
   width: 30%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -17,7 +20,7 @@ button:disabled {
   cursor: not-allowed;
 }
 button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px 15px;
   margin: 8px 0;
@@ -26,27 +29,25 @@ button {
   cursor: pointer;
   font-size: 14px;
 }
-.err-msg{
+.err-msg {
   color: #ff0000;
   font-size: 10px;
   font-weight: 600;
   /* text-align: left !important; */
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .wrapper,
-.wrapper .img-area
-{
+.wrapper .img-area {
   background: #ecf0f3;
-  box-shadow: -3px -3px 7px #ffffff,
-               3px 3px 5px #ceced1;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
 }
-.wrapper{
+.wrapper {
   position: relative;
   width: 350px;
   margin: 10px;
@@ -57,7 +58,7 @@ button {
   justify-content: center;
   flex-direction: column;
 }
-.wrapper .icon{
+.wrapper .icon {
   font-size: 17px;
   color: #31344b;
   position: absolute;
@@ -71,17 +72,7 @@ button {
   border-radius: 50%;
   font-size: 16px;
 }
-.wrapper .icon i{
-  position: relative;
-  z-index: 9;
-}
-.wrapper .icon.arrow{
-  left: 15px;
-}
-.wrapper .icon.dots{
-  right: 15px;
-}
-.wrapper .img-area{
+.wrapper .img-area {
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -89,32 +80,36 @@ button {
   align-items: center;
   justify-content: center;
 }
-.img-area .inner-area{
+.img-area .inner-area {
   height: calc(100% - 25px);
   width: calc(100% - 25px);
   border-radius: 50%;
 }
-.inner-area img{
+.inner-area img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
-.wrapper .name{
+.wrapper .name {
   font-size: 23px;
   font-weight: 500;
   color: #31344b;
   margin: 10px 0 5px 0;
 }
-.wrapper .about{
+.wrapper .about {
   color: #44476a;
   font-weight: 400;
   font-size: 16px;
 }
-.flex{
+.flex {
   display: flex;
 }
 
-.flex-wrap{
+.flex-wrap {
   flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
 }
